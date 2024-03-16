@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Pricing Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Sono", sans-serif;
+        background-color: #F8FAE5;
+      }
+
+      .pricing-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        gap: 30px;
+        height: 100vh;
+      }
+
+      .pricing-plan {
+        flex: 1;
+        max-width: 400px;
+        background-color: #B19470;
+        text-align: center;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .plan-title {
+        color: wheat;
+        -webkit-text-stroke: 2px;
+        -webkit-text-stroke-color: rgba(206, 167, 118, 0.262);
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 10px;
+        padding-top: 0px;
+      }
+
+      .plan-price {
+        color: white;
+        font-size: 3rem;
+        font-weight: bold;
+      }
+
+      .plan-button {
+        color: white;
+        text-align: center;
+        background-color: #ff6600;
+        border-radius: 5px;
+        padding: 10px;
+        border: none;
+      }
+
+      li {
+        list-style-type: none;
+        padding-bottom: 15px;
+        color: white;
+      }
+
+
+      /* Hint: What can you do with a media query and flexbox? */
+      @media (max-width: 1250px) {
+        .pricing-container {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          align-items: center;
+          height: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="pricing-container">
+      <div class="pricing-plan">
+        <div class="plan-title">Basic</div>
+        <div class="plan-price">$12.99/month</div>
+        <ul class="plan-features">
+          <li>✅ Asequible</li>
+          <li>✅ Fundamentos sólidos</li>
+          <li>🚫 Sin soporte de ayuda</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Standard</div>
+        <div class="plan-price">$19.99/month</div>
+        <ul class="plan-features">
+          <li>✅ Interacciones diarias</li>
+          <li>✅ Contenido amplio</li>
+          <li>✅ Soporte adicional</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Premium</div>
+        <div class="plan-price">$49.99/month</div>
+        <ul class="plan-features">
+          <li>✅ Aprendizaje Personalizado</li>
+          <li>✅ Recursos exclusivos</li>
+          <li>✅ Pase Foro Estudiantil privado</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+      <div class="footer">
+        <footer>
+          © 2024 Diego Aguilar. All rights reserved.
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
